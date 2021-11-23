@@ -3,12 +3,32 @@ Desenvolvedor Ricardo Enehias
 
 # Instalação
 Configure previamente o ambiente, e o arquivo .env (**não esquece de setar QUEUE_CONNECTION=database**)
-```sh
-cd dillinger
-npm i
-node app
-```
 
+- Clone o projeto 
+```
+git clone https://github.com/enehias/testeWePayOut.git
+```
+- Acessar pasta do projeto
+```
+cd testeWePayOut
+```
+- Copiar arquivo .env.exemple .env
+```
+cp .env.example .env
+```
+- Rodar migrações e seeds
+```
+php artisan migrate:fresh --seed
+```
+- Rodar migrações de fila
+```
+php artisan queue:table
+```
+- Rodar aplicação e fila do laravel
+```
+php artisan serve
+php artisan queue:work
+```
 # Endpoints
 
 Todas as rotas são protegidas com JWT(exceto login)
