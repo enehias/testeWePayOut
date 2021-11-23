@@ -12,6 +12,14 @@ git clone https://github.com/enehias/testeWePayOut.git
 ```
 cd testeWePayOut
 ```
+- Permissões do projeto:
+```
+sudo chmod -R 775 public/ storage/ bootstrap/
+```
+- Baixar pacotes do projeto:
+```
+composer update
+```
 - Copiar arquivo .env.exemple .env
 ```
 cp .env.example .env
