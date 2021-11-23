@@ -27,8 +27,8 @@ class Users extends Seeder
         ]);
 
         DB::table("users")->insert([
-            "name"        => "Administrator2",
-            "email"            => "administrator2@administrator2.com",
+            "name"        => "Administrador2",
+            "email"            => "administrador2@administrador2.com",
             "document"         => "11111111112",
             "password"         => bcrypt("password"),
             "created_at"       => now(),
@@ -36,8 +36,8 @@ class Users extends Seeder
         ]);
 
         DB::table("users")->insert([
-            "name"        => "Administrator3",
-            "email"            => "administrator3@administrator3.com",
+            "name"        => "Administrador3",
+            "email"            => "administrador3@administrador3.com",
             "document"     => "11111111113",
             "password"         => bcrypt("password"),
             "created_at"       => now(),

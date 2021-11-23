@@ -29,6 +29,11 @@ php artisan queue:table
 php artisan serve
 php artisan queue:work
 ```
+***
+- Usuário Inicial 
+  - email: administrador1@administrador1.com
+  - password: password
+***
 # Endpoints
 
 Todas as rotas são protegidas com JWT(exceto login)
